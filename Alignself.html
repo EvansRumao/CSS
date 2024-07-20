@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Align self,order </title>
+    <style>
+        header{
+    text-align: center;
+    width: 50;
+    height: 30;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: aqua;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 5px;
+    border: 3px solid black;
+    background-color: greenyellow;
+
+
+}
+main{
+    width: 500px;
+    height: 500px;
+    border: 2px solid blue;
+    margin: 3px;
+    background-color: bisque;
+    display: flex;
+    /* align-items: center; */
+    
+}
+/* #box3,#box5{
+    align-self:self-end;
+} */
+ #box1{
+    order: 3;
+ }
+ #box2{
+    flex-shrink: 4;
+    order: 5;
+ }
+ #box3{
+    order:4; 
+ }
+ #box4{
+    order: 2;
+
+ }
+ #box5{
+    order: 1;
+ }
+    </style>
+</head>
+<body>
+    <header>heading</header>
+    <main>
+        <div  id ="box1" class="box">Box1</div>
+        <div  id ="box2" class="box">Box2</div>
+        <div  id ="box3" class="box">Box3</div>
+        <div  id ="box4" class="box">Box4</div>
+        <div  id ="box5" class="box">Box5</div>
+    </main>
+    
+</body>
+</html>
